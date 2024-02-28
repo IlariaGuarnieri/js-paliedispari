@@ -24,7 +24,7 @@ if( numeroUtente == "1" || numeroUtente == "2" || numeroUtente == "3" || numeroU
   output2.innerHTML = 'devi scegliere un numero da 1 a 5'}  
   
 // 4
-const numeroRandomPc = numeroRandom ('min, max');
+const numeroRandomPc = numeroRandom ('1 , 5');
 console.log (numeroRandomPc);
 document.getElementById("numero-casuale").innerHTML = 'il numero casuale generato è :' + numeroRandomPc;
 
@@ -51,7 +51,7 @@ function numeroRandom (min, max){
  * @param {number} numeroUtente 
  */
 function sommaUtentePc ( numeroRandomPc, numeroUtente){
-  output3.innerHTML += 'la somma tra il tuo numero e il numero random è :  ' + numeroRandomPc+ numeroUtente;
+  output3.innerHTML += 'la somma tra il tuo numero e il numero random è :  ' + (numeroRandomPc+ numeroUtente);
 }
 
 
