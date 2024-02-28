@@ -1,6 +1,8 @@
 const output = document.getElementById('output-1');
 const output2 = document.getElementById('output-2');
 const output3 = document.getElementById('output-3');
+const output4 = document.getElementById('pari-dispari');
+const result = document.getElementById('risultato')
 
 // 1
 const pariDispariUtente = prompt('scegli se pari o dispari')
@@ -29,7 +31,20 @@ console.log (numeroRandomPc);
 document.getElementById("numero-casuale").innerHTML = 'il numero casuale generato è :' + numeroRandomPc;
 
 // 6
-const sommaFinale = sommaUtentePc (numeroRandomPc, numeroUtente);
+const sommaFinale = sommaUtentePc(numeroRandomPc, numeroUtente);
+
+// 7b
+const verificaNumero = verificaPariDispari(sommaFinale);
+console.log(verificaNumero);
+
+document.getElementById("pari-dispari").innerHTML = 'il risultato finale è: ' + verificaNumero;
+
+if ( pariDispariUtente === verificaNumero){
+  risultato.innerHTML += 'hai vinto tu'
+}else{
+  risultato.innerHTML += 'hai perso'
+}
+
 
 // FUNZIONI
 
@@ -52,8 +67,19 @@ function numeroRandom (min, max){
  */
 function sommaUtentePc ( numeroRandomPc, numeroUtente){
   output3.innerHTML += 'la somma tra il tuo numero e il numero random è :  ' + (numeroRandomPc+ numeroUtente);
+  return numeroUtente + numeroRandomPc;
 }
 
+
+// 7
+function verificaPariDispari (numero){
+  console.log(numero)
+  if ( numero % 2 === 0 ){
+    return 'pari'
+  }else{
+    'dispari'
+  }
+}
 
 
 
