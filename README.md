@@ -13,12 +13,15 @@ Dichiariamo chi ha vinto.
 
 # sviluppo pari e dispari
 
-1. prompt chiedo all'utente pari o dispari
+1. prompt chiedo all'utente pari o dispari 
   - stampo il risultato con console log
+  - controllo che l'utente scelga solo dispari o pari
 2. prompt chiedo di inserire un numero da 1 a 5
   - stampo il risultato con console log
+  - controllo che l'utente scelga solo dispari o pari
 3. creo una funzione per generare numeri random
 4. invoco la funzione per usare un numero random
 5. creo una funzione che faccia la somma del numero utente + numero random pc
-6. creo una funzione che riconosca se il numero è divisibile per 2 oppure no
-7. stabilisco tramite ( non so ancora cosa) chi ha vinto
+6. invoco funzione
+7. creo una funzione che riconosca se il numero è divisibile per 2 oppure no
+8. stabilisco tramite ( non so ancora cosa) chi ha vinto
